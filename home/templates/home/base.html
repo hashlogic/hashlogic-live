@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Required meta tags -->	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+   <title>Nidus Tech. solution v3 </title>
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %}">
+    <!-- Icofont Css -->
+    <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.css' %}">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}">
+    <!-- Icofont -->
+    <link rel="stylesheet" href="{% static 'plugins/icofont/icofont.css' %}">
+    <!-- Image Hover -->
+    <link rel="stylesheet" href="{% static 'plugins/imagehover/imagehover.css' %}">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top trans-navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'images/hashb.jpeg' %}" alt="" class="img-fluid b-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+              </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav ">
+					<li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="/">Home</a>
+                    </li>
+					
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="/service">Service</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="#">Pricing</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="/contacts">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}
+      
+    <!-- body content -->
+   
+    {% endblock content %}
+
+    <!--  FOOTER AREA START  -->
+<section id="footer" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-8 col-md-8">
+                <div class="footer-widget footer-link">
+                    <h4>We concern about you<br> to grow rapidly.</h4>
+                    <p>Hash Logic is an Information Technology Consultancy & Training Company in Chandigarh. While the training of teachers and students would be the primary objective, the Hash Logic will also provide various services related to information & technology both for public and private sector.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-md-4">
+                <div class="footer-widget footer-link">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about"><b>About</b></a></li>
+                        <li><a href="/service"><b>Service</b></a></li>
+                        <li><a href="/blog"><b>Blog</b></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-6 col-md-6">
+                <div class="footer-widget footer-link">
+                    <!-- <h4>Quick Links</h4> -->
+                    <ul>
+                        <!-- <li><a href="#">How it Works</a></li> -->
+                        <!-- <li><a href="#">Support</a></li> -->
+                        <!-- <li><a href="#">Privacy Policy</a></li> -->
+                        <!-- <li><a href="#">Report Bug</a></li> -->
+                        <!-- <li><a href="#">License</a></li> -->
+                        <!-- <li><a href="#">Terms & Condition</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="footer-widget footer-text">
+                    <h4>Our location</h4>
+ <!--<p class="mail"><span>Mail:</span>--><li class="fas fa-envelope mr-2"></li>   shrutiwadhwa99@gmail.com</p>
+ <!-- <p><span>Phone :</span> --> <li class="fas fa-phone mr-2"></li>+91 7973647814</p>
+ <!-- <p><span>Location:</span> --><li class="fas fa-map-marker-alt mr-2"></li> Hash Logics PVT LTD, SCO-313  <span style="margin-left:24px;">FF, sector 38-D, Chandigarh</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="footer-copy">
+                    All Rights Reserved. © Hash Logics
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+<!--  FOOTER AREA END  -->
+
+    <!--  Essential Scripts =====================================-->
+
+    <!-- Main jQuery -->
+    <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+    <!-- Bootstrap 4.3.1 -->
+    <script src="{% static 'plugins/bootstrap/js/popper.minf' %}"></script>
+    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+   <!-- Woow animtaion -->
+    <script src="{% static 'plugins/counterup/wow.min.js' %}"></script>
+    <script src="{% static 'plugins/counterup/jquery.easing.1.3.js' %}"></script>
+   
+     <!-- Counterup -->
+    <script src="{% static 'plugins/counterup/jquery.waypoints.js' %}"></script>
+    <script src="{% static 'plugins/counterup/jquery.counterup.min.js' %}"></script>
+ 
+    <!-- Contact Form -->
+    <script src="{% static 'plugins/jquery/contact.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+	
+	<!-- Partical scripts -->
+	<script src="{% static 'js/particles.js' %}"></script>
+	<script src="{% static 'js/app.js' %}"></script>
+    
+    <!-- Scroll animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".trans-navigation");
+            $nav.toggleClass('header-white', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+</body>
+</html>
