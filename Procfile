@@ -1,0 +1,1 @@
+web: gunicorn nidus_project.wsgi --log-file -

@@ -1,0 +1,430 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Required meta tags -->	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+   <title>Nidus Tech. solution v3 </title>
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %}">
+    <!-- Icofont Css -->
+    <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.css' %}">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}">
+    <!-- Icofont -->
+    <link rel="stylesheet" href="{% static 'plugins/icofont/icofont.css' %}">
+    <!-- Image Hover -->
+    <link rel="stylesheet" href="{% static 'plugins/imagehover/imagehover.css' %}">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<style>
+    img {
+      width: 100%;
+      height: auto;
+    }
+    </style>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top trans-navigation" style="background-color: black;" >
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'images/logo.png' %}" alt="" class="img-fluid b-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+              </button>
+
+            <div class="collapse navbar-collapse justify-content-end "  id="mainNav">
+                <ul class="navbar-nav " >
+                   
+					<li class="nav-item" >
+                        <a class="nav-link smoth-scroll bold"  href="/">Home</a>
+                    </li>
+					
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="/service">Service</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="#">Pricing</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll bold" href="/contacts">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   {% block content %}
+
+ <!--MAIN BANNER AREA START -->
+ <!-- <h1>How to Create a Website -An Easy, Step-by-Step Guide for Beginners</h1> -->
+<div >
+{% comment %} <img src="{{post.image.url}}"alt="" class="img-fluid"> {% endcomment %}
+{% comment %} class="page-banner-area page-contact" id="page-banner" {% endcomment %}
+    {% comment %} <div class="overlay dark-overlay"></div> {% endcomment %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
+                <div class="content-padding ">
+                    <h1>Python Projects  – Work on real-time projects to head start your Python Career</h1>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MAIN HEADER AREA END -->
+
+<section class="section blog-wrap" >
+   
+
+    <div class="container" >
+        <div class="row-2">
+        
+            <div class="col-lg-10">
+                                <div class="row">
+                        <div class="col-lg-12">
+                            <div class="blog-post">
+                               
+                               <img src="{{post.image.url}}" style="width:670px;height:550px; padding-left: 10%;">
+                                <div class="mt-4 mb-3 d-flex">
+                                    <!-- <div class="post-author mr-3">
+                                        <i class="fa fa-user" style="padding-left: 300%;"></i>
+                                        <span class="h6 text-uppercase" style="padding-left: 300%;">{{post.author}}</span>
+                                    </div>
+
+                                    <div class="post-info">
+                                        <i class="fa fa-calendar-check"style="padding-left:300%;"></i>
+                                        <span style="padding-left: 200%;">{{post.date_posted}}</span>
+                                    </div> -->
+                                </div>
+                                
+                                <!-- <a href="#" class="h4 ">{{post.title}}</a>
+                                 -->
+                                 <div style="padding-left: 200px;text-align:left;"> 
+                                    {{post.content|safe}}
+                                <!-- <p >Python has become one of the most popular languages. So getting only the theoretical knowledge will be of no use unless and until you don’t work on some real-time projects. Working on such projects will test your Python knowledge and you will get some hands-on experience. Moreover, working on such projects will help you improve your knowledge.  If you truly want to get in-depth practical knowledge, there is no better way to get your hands dirty with Python than to undertake some cool projects that will not only keep you occupied in your free time but will also teach you how to get more out of Python. </p> 
+            
+                                <p>
+                                    Python Project Ideas for Python Developers
+                                    If you have made up your mind about the platform you’re going to use, let’s jump straight into the projects. Mentioned below are some fun projects addressed towards developers of all skill levels that will play a crucial role in taking their skills and confidence with Python to the next level.
+                                </p>       
+                                    
+                                   <h4><u>1. Content Aggregator</u></h4> 
+                                    
+                                    <p>The internet is a prime source of information for millions of people who are always looking for something online. For those looking for bulk information about a specific topic can save time using a content aggregator.
+                                    A content aggregator is a tool that gathers and provides information about a topic from a bulk of websites in one place. To make one, you can take the help of the requests library for handling the HTTP requests and BeautifulSoup for parsing and scraping the required information, along with a database to save the collected information.</p>
+                                   
+                                    <h4><u>2. URL Shortener</u></h4>
+                                   <p> URLs are the primary source of navigation to any resource on the internet, be it a webpage or a file, and, sometimes, some of these URLs can be quite large with weird characters. URL shorteners play an important role in reducing the characters in these URLs and making them easier to remember and work with.
+                                    The idea behind making a URL shortener is to use the random and string modules for generating a new short URL from the entered long URL. Once you’ve done that, you would need to map the long URLs and short URLs and store them in a database to allow users to use them in the future.</p>
+                                    
+                                   <h4><u> 3. File Renaming Tool </u></h4>
+                                    <p>
+                                    If your job requires you to manage a large number of files frequently, then using a file renaming tool can save you a major chunk of your time. What it essentially does is that it renames hundreds of files using a defined initial identifier, which could be defined in the code or asked from the user.
+                                    To make this happen, you could use the libraries such as sys, shutil, and os in Python to rename the files instantaneously. To implement the option to add a custom initial identifier to the files, you can use the regex library to match the naming patterns of the files.
+                                </p>
+                                    <h4><u>4. Directory Tree Generator</u></h4>
+                                    <p>A directory tree generator is a tool that you would use in conditions where you’d like to visualize all the directories in your system and identify the relationship between them. What a directory tree essentially indicates is which directory is the parent directory and which ones are its sub-directories. A tool like this would be helpful if you work with a lot of directories, and you want to analyze their positioning. To build this, you can use the os library to list the files and directories along with the docopt framework.
+                                    </p>
+                                    <h4><u> 5. MP3 Player</u></h4>
+                                   
+                                    <p> If you love listening to music, you’d be surprised to know that you can build a music player with Python. You can build an mp3 player with the graphical interface with a basic set of controls for playback, and even display the integrated media information such as artist, media length, album name, and more.
+                                        You can also have the option to navigate to folders and search for mp3 files for your music player. To make working with media files in Python easier, you can use the simpleaudio, pymedia, and pygame libraries.</p>
+                                   
+                                    <h4><u>  6. Tic Tac Toe</u></h4>
+                                  <p> Tic Tac Toe is a classic game we’re sure each of you is familiar with. It’s a simple and fun game and requires only two players. The goal is to create an uninterrupted horizontal, vertical, or diagonal line of either three Xs or Os on a 3x3 grid, and whoever does it first is the winner of the game. A project like this can use Python’s pygame library, which comes with all the required graphics and the audio to get you started with building something like this.</p>
+                                   
+                                    <h4><u>  7. Quiz Application</u></h4>
+                                  <p> Another popular and fun project you can build using Python is a quiz application. A popular example of this is Kahoot, which is famous for making learning a fun activity among the students. The application presents a series of questions with multiple options and asks the user to select an option and later on, the application reveals the correct options.
+                                    As the developer, you can also create the functionality to add any desired question with the answers to be used in the quiz. To make a quiz application, you would need to use a database to store all the questions, options, the correct answers, and the user scores.</p>
+                                   
+                                    <h4><u> 8. Calculator</u></h4>
+                                   <p> Of course, no one should miss the age-old idea of developing a calculator while learning a new programming language, even if it is just for fun. We’re sure all of you know what a calculator is, and if you have already given it a shot, you can try to enhance it with a better GUI that brings it closer to the modern versions that come with operating systems today. To make that happen, you can use the tkinter package to add GUI elements to your project.</p>
+                                    
+                                   
+                                    <h4><u>  9. Build a Virtual Assistant</u></h4>
+                                  
+                                    <p>  Almost every smartphone nowadays comes with its own variant of a smart assistant that takes commands from you either via voice or by text and manages your calls, notes, books a cab, and much more. Some examples of this are Google Assistant, Alexa, Cortana, and Siri. If you’re wondering what goes into making something like this, you can use packages such as pyaudio, SpeechRecognition, gTTS, and Wikipedia. The goal here is to record the audio, convert the audio to text, process the command, and make the program act according to the command.</p>
+                                  
+                                    <h4><u>    10. Currency Converter</u></h4>
+                                <p> As the name suggests, this project includes building a currency converter that allows you to input the desired value in the base currency and returns the converted value in the target currency. A good practice is to code the ability to get updated conversion rates from the internet for more accurate conversions. For this too, you can use the tkinter package to build the GUI.</p>
+                                   
+                                <h4><u>     More Python Project Ideas to Build— </u></h4>
+                               <ul>
+                                   <li> Speed Typing Test in Python
+                                   </li>
+                                   <li>Youtube Videos Downloader</li>
+                                   <li> Detect all the Fake News with Python</li>
+                                   <li> Web Crawler in Python</li>
+                                   <li> Plagiarism Checker in Python</li>
+                                   <li> Python File Explorer</li>
+                                   <li>  Alarm Clock</li>
+                                   <li>  Create a Crypto App with Python</li>
+                                   <li> Speech Emotion Recognition</li>
+                                   <li>Password generator</li>
+                                   <li> Build a Twitter Bot</li>
+                                   <li>  Age and Gender Detection</li>
+                                   <li> Breast Cancer Classification</li>
+                                   <li>  Driver Drowsiness Detection</li>
+                                   <li>Build a Simple Web Page with Django</li>                                    
+                                                                                             
+                                   
+                                  
+
+                                </ul> -->
+                            </div>
+
+                                <!-- <blockquote class="quote">
+                                    <i class="fa fa-quote-left"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis, molestias ipsam assumenda debitis quibusdam mollitia laudantium facere neque quas optio sequi eligendi recusandae, veritatis dicta asperiores ex fugiat quasi!
+                                </blockquote> -->
+
+                                <!-- <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p> -->
+                                
+                                
+                            </div>
+
+
+                            <div class="comments my-4">
+                                <h3 class="mb-5">Comments :</h3>
+                                {% if post.details.all %}
+                                <!-- <div class="card card-signin my-5"> -->
+                                  {% for detail in post.details.all %}
+                                <div class="media mb-4">
+                                    <!-- <img src="{% static 'images/blog/2.jpg' %}" alt="" class="img-fluid d-flex mr-4 rounded"> -->
+                                    <div class="media-body">
+                                        <h5>{{ detail.name }}</h5>
+                                        <span class="text-muted">{{ detail.comment_date }}</span>
+                                        <p class="mt-2"> {{ detail.comment }}</p>
+
+                                        <!-- <a href="#" class="reply">Reply <i class="fa fa-reply"></i></a> -->
+                                    </div>
+
+                                </div>
+                                {% endfor %}
+                                    <!-- </div> -->
+                                {% else %}
+                                    <p class="tag-color">No comments to show!</p>
+                                {% endif %}
+                                <!-- <div class="media mb-4">
+                                    <img src="{% static 'images/blog/2.jpg' %}" alt="" class="img-fluid d-flex mr-4 rounded">
+                                    <div class="media-body">
+                                        <h5>John michele</h5>
+                                        <span class="text-muted">20 Jan 2018</span>
+                                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi laborum dolores quidem ea optio fuga nesciunt tempora, in tenetur iusto!</p>
+
+                                        <a href="#" class="reply">Reply <i class="fa fa-reply"></i></a>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <div class="mt-5 mb-3">
+                                <h3 class="mt-5 mb-2">Leave a comment</h3>
+                                <p class="mb-4">We don't spam at your inbox.</p>
+                                <form action="#" class="row" method="POST">
+                                    {% csrf_token %}
+                                    {{ form.NewCommentForm }}
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-3">
+                                            <textarea cols="30" rows="6" class="form-control"  placeholder="comment" name="comment"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Name" name="name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-4">
+                                            <input type="email" class="form-control" placeholder="Email" name="email">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <button class="btn btn-hero btn-circled" type="submit">Comment</button>
+                                        <!-- <a href="#" class="btn btn-hero btn-circled">Send a message</a> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            {% comment %} <div class="col-lg-4">
+                                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sidebar-widget search">
+                                <div class="form-group">
+                                    <input type="text" placeholder="search" class="form-control">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="sidebar-widget about-bar">
+                                <h5 class="mb-3">About us</h5>
+                                <p>Nostrum ullam porro iusto. Fugit eveniet sapiente nobis nesciunt velit cum fuga doloremque dignissimos asperiores</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="sidebar-widget category">
+                                <h5 class="mb-3">Category</h5>
+                                <ul class="list-styled">
+                                    <li>Marketing</li>
+                                    <li>Digiatl</li>
+                                    <li>SEO</li>
+                                    <li>Web Design</li>
+                                    <li>Development</li>
+                                    <li>video</li>
+                                    <li>audio</li>
+                                    <li>slider</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="sidebar-widget tag">
+                                <a href="#">web</a>
+                                <a href="#">development</a>
+                                <a href="#">seo</a>
+                                <a href="#">marketing</a>
+                                <a href="#">branding</a>
+                                <a href="#">web deisgn</a>
+                                <a href="#">Tutorial</a>
+                                <a href="#">Tips</a>
+                                <a href="#">Design trend</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="sidebar-widget download">
+                                <h5 class="mb-4">Download Files</h5>
+                                <a href="#"> <i class="fa fa-file-pdf"></i>Company Manual</a>
+                                <a href="#"> <i class="fa fa-file-pdf"></i>Company Profile</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>    {% endcomment %}
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+
+    <!--  FOOTER AREA START  -->
+<section id="footer" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-8 col-md-8">
+                <div class="footer-widget footer-link">
+                    <h4>We concern about you<br> to grow business rapidly.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam hic non sunt recusandae atque unde saepe nihil earum voluptatibus aliquid optio suscipit nobis quia excepturi vel quod, iure quae.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-md-4">
+                <div class="footer-widget footer-link">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about">About</a></li>
+                        <li><a href="service">Service</a></li>
+                        <li><a href="blog">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-6 col-md-6">
+                <div class="footer-widget footer-link">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Report Bug</a></li>
+                        <li><a href="#">License</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="footer-widget footer-text">
+                    <h4>Our location</h4>
+                    <p class="mail"><span>Mail:</span> shrutiwadhwa99@gmail.com</p>
+                    <p><span>Phone :</span>+91 7973647814</p>
+                    <p><span>Location:</span> Hash Logics PVT LTD, SCO-313 FF, sector 38-D, Chandigarh</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="footer-copy">
+                    All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+<!--  FOOTER AREA END  -->
+
+    <!--  Essential Scripts =====================================-->
+
+    <!-- Main jQuery -->
+    <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+    <!-- Bootstrap 4.3.1 -->
+    <script src="{% static 'plugins/bootstrap/js/popper.minf' %}"></script>
+    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+   <!-- Woow animtaion -->
+    <script src="{% static 'plugins/counterup/wow.min.js' %}"></script>
+    <script src="{% static 'plugins/counterup/jquery.easing.1.3.js' %}"></script>
+   
+     <!-- Counterup -->
+    <script src="{% static 'plugins/counterup/jquery.waypoints.js' %}"></script>
+    <script src="{% static 'plugins/counterup/jquery.counterup.min.js' %}"></script>
+ 
+    <!-- Contact Form -->
+    <script src="{% static 'plugins/jquery/contact.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+	
+	<!-- Partical scripts -->
+	<script src="{% static 'js/particles.js' %}"></script>
+	<script src="{% static 'js/app.js' %}"></script>
+    
+    <!-- Scroll animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".trans-navigation-1");
+            $nav.toggleClass('header-white', $(this).scrollTop() > $nav.height());
+            
+        });
+    });
+</script>
+</body>
+</html>
