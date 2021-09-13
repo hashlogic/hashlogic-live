@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blog',
     'users',
     'ckeditor',
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
