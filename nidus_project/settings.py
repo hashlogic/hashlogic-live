@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--zr!l&wmhijzn*8pbw23uy$&#pp9_6md-+6c#!74dl=6!q4&xp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['hashlogic.herokuapp.com','127.0.0.1']
 
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'blog',
     'users',
     'ckeditor',
-    'whitenoise.runserver_nostatic',
+#     'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
