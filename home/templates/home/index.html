@@ -1,171 +1,605 @@
+{% extends 'home/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=yes">
-    
-    <!-- Required meta tags -->	
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=yes">
-	
-   <title>Nidus Tech. solution v3 </title>
-    <!-- bootstrap.min css -->
-    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %}">
-    <!-- Icofont Css -->
-    <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.css' %}">
-    <!-- animate.css -->
-    <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}">
-    <!-- Icofont -->
-    <link rel="stylesheet" href="{% static 'plugins/icofont/icofont.css' %}">
-    <!-- Image Hover -->
-    <link rel="stylesheet" href="{% static 'plugins/imagehover/imagehover.css' %}">
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    
+    {% block content %}
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-</head>
-<body data-spy='scroll' data-target="fixed-top">
-    
-    <nav class="navbar  fixed-top trans-navigation">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="{% static 'images/hashb.jpeg' %}" alt="" class="img-fluid b-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fa fa-bars"></i>
-                </span>
-              </button>
+    <!--MAIN HEADER AREA END  data-spy="scroll" data-target=".fixed-top"-->
+	<!--test AREA start -->
+  <!-- <div class="pimg1">
+  
+        <div class="ptext">
+        <p class="content ptext_bold" data-aos="fade-right"data-aos-duration="1000">accelerate your business with custom webstie development</p>
+        <span class="border1">
+            <a href="#" class="btn btn-white btn-circled" data-aos="fade-right" data-aos-duration="1000">Get Start</a> -->
+            <!-- <a id="anchor"href="#" >
+        </span>
+        </div>
+  </div>
+  <div class="pimg2">
+    <div class="ptext ptext2" data-aos="fade-right"data-aos-duration="1000">
+	<p class="content ptext_bold">Responsive</br> Web</br> Design</p>
+      <span class="border1 trans1  btn-margin">
+        <a href="#" class="btn btn-white btn-circled" data-aos="fade-right"data-aos-duration="1000">Get Start</a> -->
+		<!-- <a id="anchor"href="#" >-->
+      <!-- </span>
+    </div>
+  </div> -->
 
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-                <ul class="navbar-nav ">
-					<li class="nav-item">
-                        <a class="nav-link smoth-scroll bold" href="/">Home</a>
-                    </li>
-					
-                    <li class="nav-item">
-                        <a class="nav-link smoth-scroll bold" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link smoth-scroll bold" href="/service">Service</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link smoth-scroll bold" href="#">Pricing</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link smoth-scroll bold" href="/blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link smoth-scroll bold" href="/contacts">Contact</a>
-                    </li>
-                </ul>
+  <div class="pimg3" style="background-color: #231f20;">
+    <div id="particles-js" class="particles-js"></div>
+    <div class="ptext" data-aos="fade-right"data-aos-duration="1000">
+	<p class="content"><b> We make </b>things <b>happen</b></p>
+      <span >
+        <a href="service" class="btn btn-white btn-circled" data-aos="fade-right" data-aos-duration="1000">Get Start</a>
+      </span>
+    </div>
+  </div>
+	<!--test AREA END -->
+<!--MAIN BANNER AREA START --
+<div class="banner-area banner-3">
+    <div class="overlay dark-overlay"></div>
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
+                        <div class="banner-content content-padding">
+                            <h5 class="subtitle">A creative agency</h5>
+                            <h1 class="banner-title">We craft seo and digital services</h1>
+                            <p>We provide services to startups and small businesses to looking for a partner for their digital media, design-area.We are a a startup company to be commited to work and time management.</p>
+
+                            <a href="#" class="btn btn-white btn-circled">lets start</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    
-    {% block content %}
-    
-    <!-- body content -->
-  
-    {% endblock content %}
+    </div>
+</div> -->
+<!--MAIN HEADER AREA END -->
+	
+<!--  ABOUT AREA START  --> 
+   <section id="intro" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="section-heading">
+						<h1 class="tcolor"> Who We Are?</h1>
+                        <p class="lead tcolor">Designer, Coder, Trainer  & Much more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5  d-none d-lg-block col-sm-12" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="linear"
+                >
+                    <div class="video">
+                        <iframe width="300" height="300" src="https://www.youtube.com/embed/c83-7MR_aL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12 ">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6 col-md-6" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="linear"
+                        >
+                            <div class="intro-box">
+                                <span>01.</span>
+                                <h4 class="tcolor">Designer</h4>
+                                <p>We are actively engaged in the developing and designing part of the database driven dynamic websites. These websites are eye catching with an interactive interface where you can make changes on real time basis. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="linear"
+                        >
+                            <div class="intro-box">
+                                <span>02.</span>
+                                <h4 class="tcolor">Coder</h4>
+                                <p>We’re full service which means we’ve got you covered on design & content right through to digital.  </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="linear"
+                        >
+                            <div class="intro-box">
+                                <span>03.</span>
+                                <h4 class="tcolor">Trainer</h4>
+                                <p>Thoroughly-trained student employees perform their jobs well, become assets to your department, and make your job easier. The time you spend training your students is an investment that pays in the long run.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="linear"
+                        >
+                            <div class="intro-box">
+                                <span>04.</span>
+                                <h4 class="tcolor">Other services</h4>
+                                <p>
 
-    <!--  FOOTER AREA START  -->
-<section id="footer" class="section-padding">
+                                    Machine Learning, Deep Learning, Artificial Intelligence
+                                    Big Data, Cloud Computing, Python, Linux Administration
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="linear">
+                      <div class="col-lg-12">
+                           <div class="intro-cta">
+                               <p class="lead ">Still have any question on mind ? <a href="/contacts" class="smoth-scroll">Contact us</a></p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  ABOUT AREA END  -->
+
+<!--  SERVICE PARTNER START  -->
+<div id="particles-js-3" class="particles-js"></div>
+<section id="service-head" class=" bg-feature" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-sm-8 col-md-8">
-                <div class="footer-widget footer-link">
-                    <h4>We concern about you<br> to grow rapidly.</h4>
-                    <p>Hash Logic is an Information Technology Consultancy & Training Company in Chandigarh. While the training of teachers and students would be the primary objective, the Hash Logic will also provide various services related to information & technology both for public and private sector.</p>
+            <div class="col-lg-12 col-sm-12 m-auto pos-rel">
+                <div class="section-heading text-white">
+                    <h4 class="section-title">WHAT WE DO...</h4>
+                    <!-- <p>We’re full service which means we’ve got you covered on design & content right through to digital. You’ll form a lasting relationship with us.</p> -->
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-4 col-md-4">
-                <div class="footer-widget footer-link">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="/about"><b>About</b></a></li>
-                        <li><a href="/service"><b>Service</b></a></li>
-                        <li><a href="/blog"><b>Blog</b></a></li>
-                    </ul>
+        </div>
+    </div>
+</section>
+<!--  SERVICE PARTNER END  -->
+
+<!--  SERVICE AREA START  -->
+    <section id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-right">
+                    <div class="service-box arrow ">
+                        <div class="service-box-2">
+                            <img src="{% static 'images/web_design.jpg' %}" alt="service-icon" ><!--class="img-hight" style="height: 150px;"-->
+                        </div>
+                        <div class="service-inner-border">
+                            <h4 class="tcolor" style = 'font-size: 20px;'>WEB DEVELOPMENT</h4>
+                        </div>
+                        
+                        <div class="overlayer padding1">
+                            <h4 class="tcolor">WEB DEVELOPMENT</h4>
+                            <p class="tcolor" style="text-align:justify">We are providing training for the Web Development using Django Framework and PHP. Students will explore the live projects and get the chance to work on FrontEnd and BackEnd.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-up">
+                    <div class="service-box arrow">
+                        <div class="service-box-2">
+                            <img src="{% static 'images/data analysis1.jpg' %}" alt="service-icon" >
+                        </div>
+                        <div class="service-inner-border">
+                            <h4 class="tcolor">DATA ANALYSIS</h4>
+                        </div>
+                        
+                        <div class="overlayer padding1">
+                            <h4 class="tcolor">DATA ANALYSIS</h4>
+                            <p class="tcolor" style="text-align:justify">Data Analysis is a process of cleaning, transforming and modeling data to discover useful information for business decision making.It is very hot in demand in jobs.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-right">
+                    <div class="service-box arrow">
+                        <div class="service-box-2">
+                            <img src="{% static 'images/mobile-app-development.jpg' %}" alt="service-icon">
+                        </div>
+                        <div class="service-inner-border">
+                            <h4 class="tcolor" style = 'font-size: 20px;'>APP DEVELOPMENT</h4>
+                        </div>
+                        
+                        <div class="overlayer padding1">
+                            <h4 class="tcolor">APP DEVELOPMENT</h4>
+                            <p class="tcolor" style="text-align:justify">Become a mobile App Developer with proficiency in all aspects of mobile applications from design to building and publishing apps via this App Development course.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-right">
+                    <div class="service-box arrow">
+                        <div class="service-box-2">
+                           <img  src="{% static 'images/thesis.png' %}" alt="service-icon">
+                        </div>
+                        <div class="service-inner-border">
+                            <h4 class="tcolor">THESIS ASSISTANCE</h4>
+                        </div>
+                        
+                        <div class="overlayer padding1">
+                            <h4 class="tcolor">THESIS ASSISTANCE</h4>
+                            <p class="tcolor" style="text-align:justify">We have a team of experts that will provide research article writing services in all streams that will not only make your paper well recognized and also publish your quality research article in reputed journals.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-up">
+                    <div class="service-box arrow">
+                        <div class="service-box-2">
+                            <img src="{% static 'images/training.jpg' %}" alt="service-icon">
+                        </div>
+                        <div class="service-inner-border">
+                            <h4 class="tcolor">TRAINING</h4>
+                        </div>
+                        
+                        <div class="overlayer padding1">
+                            <h4 class="tcolor">TRAINING</h4>
+                            <p class="tcolor" style="text-align:justify">We have trained thousands of Students from last six years. We have trained students in the field of Python, Java, Data analysis, Big Data Analytics, Machine learning, Cyber Security, Cloud Computing. </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-right">
+                    <div class="service-box arrow">
+                        <div class="service-box-2">
+                            <img src="{% static 'images/workshop1.jpg' %}" alt="service-icon">
+                        </div>
+                        <div class="service-inner-border">
+                            <h4 class="tcolor">WORKSHOP/SEMINAR</h4>
+                        </div>
+                         
+                        <div class="overlayer padding1">
+                            <h4 class="tcolor">WORKSHOP / SEMINAR</h4>
+                            <p class="tcolor" style="text-align:justify">We have organized many wokshops and seminars with reputed Colleges and Universities. We will be glad to associate with Colleges and Universities for organizing the workshops and seminars.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  SERVICE AREA END  -->
+	<!--  SERVICE BLOCK2 START  -->
+	<section id="service-2" class="section-padding">
+        <div class="container" data-aos="zoom-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box-3">
+                        <h2 class="center-align tcolor no-padding"> Why Chose Us</h2>
+                        <p class="center-align tcolor">WE PROVIDE HIGH QUALITY SERVICES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6" data-aos="fade-right">
+                <div class="service-box-3">
+                     <div class="fa_back"><i class="fa fa-heart fas center-align fac"></i></div>
+                    <h4 class="tcolor">WE <br>LISTEN</h4>
+                    <p> We listen, we discuss, we advise. Sounds obvious but we listen to your ideas, plans
+                                    and objectives for your business. We then select the best solution to fit.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="service-box-3">
+                    <div class="fa_back"> <i class="fa fa-cogs   center-align fac"></i></div>
+                    <h4 class="tcolor">CREATIVE <br>& TECHNICAL</h4>
+                    <p>Whether its website, system development or custom programming we like to keep everything
+                                    under one roof to make it easier for our customers.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-right">
+                <div class="service-box-3">
+                    <div class="fa_back"><i class="fa fa-rocket center-align fac"></i></div>
+                    <h4 class="tcolor">PASSIONATE <br>&nbsp</h4>
+                    <p>We love nothing more that working on a project with a client. We care about our
+                                    clients and can often be found working out of hours to get everything right!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  SERVICE BLOCK2 END  -->
+<div id="particles-js-2" class="particles-js"></div>
+<section id="service-head" class=" bg-feature" >
+    <div class="container" >
+        <div class="row" >
+            <div class="col-lg-12 col-sm-12 m-auto pos-rel" >
+                <div class="section-heading text-white" >
+                    <h4 class="section-title" > Technology That Works For You</h4>
+                    <p >We do more than use technology, We make it better to use.</p>
+				
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="service">
+    <div class="container">
+        <div class="row">
+
+          
+
+            <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-right">
+                <div class="service-box arrow ">
+                    <div class="service-box-2">
+                        <img  src="{% static 'images/python.jpg' %}" alt="service-icon" ><!--class="img-hight" style="height: 150px;"-->
+                    </div>
+                    <div class="service-inner-border">
+                        <h4 class="tcolor">Python</h4>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-up">
+                <div class="service-box arrow">
+                    <div class="service-box-2">
+                        <img  src="{% static 'images/mobile-app-development.jpg' %}" alt="service-icon" >
+                    </div>
+                    <div class="service-inner-border">
+                        <h4>Android</h4>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-right">
+                <div class="service-box arrow">
+                    <div  class="service-box-2">
+                        <img  src="{% static 'images/React-Native-Developers.png' %}" alt="service-icon">
+                        
+                    </div>
+
+                    <div class="service-inner-border">
+                        <h4>React Native </h4>
+                    </div>
+                    
+                    
+                    
                 </div>
             </div>
 
-            <div class="col-lg-2 col-sm-6 col-md-6">
-                <div class="footer-widget footer-link">
-                    <!-- <h4>Quick Links</h4> -->
-                    <ul>
-                        <!-- <li><a href="#">How it Works</a></li> -->
-                        <!-- <li><a href="#">Support</a></li> -->
-                        <!-- <li><a href="#">Privacy Policy</a></li> -->
-                        <!-- <li><a href="#">Report Bug</a></li> -->
-                        <!-- <li><a href="#">License</a></li> -->
-                        <!-- <li><a href="#">Terms & Condition</a></li> -->
-                    </ul>
+            <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-up">
+                <div  class="service-box arrow">
+                    <div class="service-box-2">
+                        <img  src="{% static 'images/django.jpeg' %}" alt="service-icon">
+                    </div>
+                    <div  class="service-inner-border">
+                        <h4>Web Development with Django</h4>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-up">
+                <div  class="service-box arrow">
+                    <div class="service-box-2">
+                        <img  src="{% static 'images/php.png' %}" alt="service-icon">
+                    </div>
+                    <div  class="service-inner-border">
+                        <h4>Web Development with PHP</h4>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6 aos-item imgOver" data-aos="fade-right">
+                <div class="service-box arrow">
+                    <div  class="service-box-2">
+                        <img  src="{% static 'images/workshop.jpg' %}" alt="service-icon">
+                    </div>
+                    <div  class="service-inner-border">
+                        <h4> Dot <br/> NET</h4>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+
+            
+
+           
+        </div>
+    </div>
+</section>
+
+<!--  TESTIMONIAL AREA START  -->
+    <section id="testimonial" class="section-padding ">
+        <div class="container" data-aos="fade-right">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="mb-5">
+                        <h3 class="mb-2">Reviews</h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dignissimos?</p> -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 m-auto col-sm-12 col-md-12">
+                    <div class="carousel slide" id="test-carousel2">
+                        <div class="carousel-inner">
+                            <ol class="carousel-indicators">
+                                {% for post in posts %}   
+                                {% if forloop.first %}   
+                                <li data-target="#test-carousel2" data-slide-to="{{forloop.counter0}}" class="active"></li>
+                                {% else %}
+                                <li data-target="#test-carousel2" data-slide-to="{{forloop.counter0}}"></li>
+                                
+                                {% endif %}
+                                {% endfor %}
+                                <!-- <li data-target="#test-carousel2" data-slide-to="2"></li> -->
+                            </ol>
+
+                            <div class="carousel-inner" >
+                                {% for post in posts %}
+                                {% if forloop.first %}
+                                <div class="carousel-item active" data-interval="10000">
+                                    <div class="row">
+                                    
+                                    <div class="col-lg-12 col-sm-12">
+                                        
+                                        <div class="testimonial-content style-2">
+                                            
+                                            <div class="author-info ">
+                                                <div class="author-img">
+                                                    <img src="{{ post.image.url }}" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+
+                                            <p><i class="icofont icofont-quote-right"></i>{{ post.content}} <i class="icofont icofont-quote-right"></i></p>
+                                            <div class="author-text">
+                                                <h5>{{post.author}}</h5>
+                                                <h5>{{post.position}}</h5>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div> 
+                                    {% else %}
+                                    <div class="carousel-item " data-interval="10000">
+                                        <div class="row">
+                                            
+                                            <div class="col-lg-12 col-sm-12">
+                                                
+                                                <div class="testimonial-content style-2">
+                                                    
+                                                    <div class="author-info ">
+                                                        <div class="author-img">
+                                                            <img src="{{ post.image.url }}" alt="" class="img-fluid">
+                                                        </div>
+                                                    </div>
+        
+                                                    <p><i class="icofont icofont-quote-right"></i>{{ post.content}} <i class="icofont icofont-quote-right"></i></p>
+                                                    <div class="author-text">
+                                                        <h5>{{post.author}}</h5>
+                                                        <h5>{{post.position}}</h5>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                                  
+                                </div>
+                               
+                            
+                            {% endif %}
+                            {% endfor %}  
+                            
+                            </div>
+
+                            <!-- <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="testimonial-content style-2">
+                                            <div class="author-info ">
+                                                <div class="author-img">
+                                                    <img src="{% static 'images/author/5b.jpg' %}" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+
+                                            <p><i class="icofont icofont-quote-right"></i>They is a great platform to anyone like who want to start buisiness but not get right decision. It’s really great placefor new to start the buisness in righ way! <i class="icofont icofont-quote-right"></i></p>
+                                            <div class="author-text">
+                                                <h5>Marine Joshi</h5>
+                                                <p>Senior designer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--  ITEM END  -->
+
+                            <!-- <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="testimonial-content style-2">
+                                            <div class="author-info ">
+                                                <div class="author-img">
+                                                    <img src="{% static 'images/author/3b.jpg' %}" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+
+                                            <p><i class="icofont icofont-quote-right"></i>They is a great platform to anyone like who want to start buisiness but not get right decision. It’s really great placefor new to start the buisness in righ way!<i class="icofont icofont-quote-right"></i></p>
+                                            <div class="author-text">
+                                                <h5>Marine Joshi</h5>
+                                                <p>Senior designer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--  ITEM END  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  TESTIMONIAL AREA END  -->
+<!--  PARTNER START  -->
+<section  class="section-padding ">
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
+</section>
+<!--  PARTNER END  -->
+
+<!--  COUNTER AREA START  -->
+<section id="counter" class="section-padding">
+    <div class="overlay dark-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="counter-stat">
+                    <i class="icofont icofont-heart"></i>
+                    <span class="counter">460</span>
+                    <h5>Our Happy Clients</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="footer-widget footer-text">
-                    <h4>Our location</h4>
- <!--<p class="mail"><span>Mail:</span>--><li class="fas fa-envelope mr-2"></li>   shrutiwadhwa99@gmail.com</p>
- <!-- <p><span>Phone :</span> --> <li class="fas fa-phone mr-2"></li>+91 7973647814</p>
- <!-- <p><span>Location:</span> --><li class="fas fa-map-marker-alt mr-2"></li> Hash Logics PVT LTD, SCO-313  <span style="margin-left:24px;">FF, sector 38-D, Chandigarh</span></p>
+                <div class="counter-stat">
+                    <i class="icofont icofont-rocket"></i>
+                    <span class="counter">60</span>
+                    <h5>Projects Done</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="counter-stat">
+                    <i class="icofont icofont-hand-power"></i>
+                    <span class="counter">30</span>
+                    <h5>Student's Trained</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="counter-stat">
+                    <i class="icofont icofont-shield-alt"></i>
+                    <span class="counter">25</span>
+                    <h5>Ongoning Projects</h5>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="footer-copy">
-                    All Rights Reserved. © Hash Logics
-                </div>
-            </div>
-        </div>
-    </div>  
+    </div>
 </section>
-<!--  FOOTER AREA END  -->
+<!--  COUNTER AREA END  -->
 
-    <!--  Essential Scripts =====================================-->
-
-    <!-- Main jQuery -->
-    <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
-    <!-- Bootstrap 4.3.1 -->
-    <script src="{% static 'plugins/bootstrap/js/popper.minf' %}"></script>
-    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
-   <!-- Woow animtaion -->
-    <script src="{% static 'plugins/counterup/wow.min.js' %}"></script>
-    <script src="{% static 'plugins/counterup/jquery.easing.1.3.js' %}"></script>
    
-     <!-- Counterup -->
-    <script src="{% static 'plugins/counterup/jquery.waypoints.js' %}"></script>
-    <script src="{% static 'plugins/counterup/jquery.counterup.min.js' %}"></script>
- 
-    <!-- Contact Form -->
-    <script src="{% static 'plugins/jquery/contact.js' %}"></script>
-    <script src="{% static 'js/custom.js' %}"></script>
-	
-	<!-- Partical scripts -->
-	<script src="{% static 'js/particles.js' %}"></script>
-	<script src="{% static 'js/app.js' %}"></script>
+{% endblock content %} 
     
-    <!-- Scroll animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-<script>
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".trans-navigation");
-            $nav.toggleClass('header-white', $(this).scrollTop() > $nav.height());
-        });
-    });
-</script>
 
-</body>
-</html>
