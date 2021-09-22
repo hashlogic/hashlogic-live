@@ -1742,6 +1742,12 @@ canvas{
   background: #002551;  
 }
 
+.fa_black
+{
+color:black !important;
+
+}
+
 .fa
 {
   margin-top:25px;
@@ -1773,4 +1779,4 @@ canvas{
   background-color: white;
   border:3px solid black
 }
-.fa{color:black;}
+
